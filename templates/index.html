@@ -1,0 +1,24 @@
+<html>
+<body bgcolor=#a3cfb4>
+
+    <center>
+
+        <H1> Predict Penguin Species 🐧 </H1>
+    <form action='/predict' method="POST">
+        Culmen Lenght  :  <input type="text", name='culmen_lenght', placeholder="(mm)"> <br><br>
+        Culmen Depth   :  <input type="text", name='culmen_depth', placeholder="(mm)"> <br><br>
+        Flipper Lenght :  <input type="text", name='flipper_lenght', placeholder="(mm)"> <br><br>
+        Body Mass      :  <input type="text", name='body_mass', placeholder="(g)"> <br><br>
+
+        <img src='static\penguin.png' alt="penguin">
+
+        <br> Class: {{result}} <br>
+        <input type='Submit' value = 'Predict'>
+        
+    </form>
+
+
+    </center>
+    
+</body>
+</html>
